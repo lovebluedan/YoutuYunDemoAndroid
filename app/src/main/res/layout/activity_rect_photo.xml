@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--<TextView-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="xxxxxxxxxxxxx"-->
+        <!--tools:context=".RectPhoto" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/previewSV"
+            android:layout_width="match_parent"
+            android:layout_height="100px " />
+        
+        <!--<com.qq.youtu.youtuyundemo.DrawImageView2-->
+             <!--android:id="@+id/drawIV"-->
+             <!--android:layout_width="fill_parent"-->
+             <!--android:layout_height="fill_parent" />-->
+        <ImageView
+            android:padding="20dp"
+            android:src="@drawable/idcard_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <ImageButton
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/photoImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/camera_button" />
+
+
+</RelativeLayout>

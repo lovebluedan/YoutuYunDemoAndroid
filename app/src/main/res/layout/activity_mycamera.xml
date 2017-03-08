@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/myFramelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:id="@+id/msurfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--<com.qq.youtu.youtuyundemo.DrawImageView-->
+            <!--android:id="@+id/drawIV"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="800px" />-->
+        <ImageView
+            android:src="@drawable/person_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="开始识别"
+        android:id="@+id/mbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
